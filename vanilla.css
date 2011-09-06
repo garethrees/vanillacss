@@ -1,0 +1,233 @@
+/**
+* Vanilla CSS
+**/
+
+/*------------------------------------*\
+	MAIN ELEMENTS
+\*------------------------------------*/
+
+body {}
+div {}
+hr {}
+
+/* New HTML5 Elements */
+
+header {}
+section {}
+footer {}
+
+/*
+	Use ARIA roles to define your page header so that you can use general <header> tags elsewhere
+	Also lets you style your header nav independently of other navs
+	http://adactio.com/journal/4267/
+*/
+
+header[role="banner"] {}
+header[role="banner"] nav {}
+header[role="banner"] nav ul {}
+header[role="banner"] nav li {}
+
+
+/*------------------------------------*\
+	ARTICLE
+\*------------------------------------*/
+
+article {}
+article header {}
+article footer {}
+
+aside {}
+
+/*------------------------------------*\
+	HEADINGS
+\*------------------------------------*/
+
+/* All Headings */
+h1, h2, h3, h4, h5, h6 {}
+
+/* Linked Headings*/
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {}
+
+/* Individual Headings */
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+/*------------------------------------*\
+	TEXT
+\*------------------------------------*/
+
+/* Paragraphs */
+p {}
+p+p {}
+
+address {}
+
+/* Text Level Semantics */
+a {}
+abbr {}
+b {}
+cite {}
+code {}
+del {}
+dfn {}
+em {}
+i {}
+ins {}
+kbd {}
+mark {}
+q {}
+s {}
+samp {}
+small {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+var {}
+u {}
+
+/* Blockquote */
+blockquote {}
+blockquote p {}
+blockquote cite {}
+
+/* Preformatted Text */
+pre {}
+
+
+/*------------------------------------*\
+	LISTS
+\*------------------------------------*/
+
+/* All Lists */
+dl, ol, ul {}
+
+/* Ordered Lists */
+ol {}
+ol li {}
+
+/* Unordered Lists */
+ul {}
+ul li {}
+
+/* Definition Lists */
+dl {}
+dt {}
+dd {}
+
+
+/* Lists in Lists */
+
+/*
+	TODO Style Lists in Lists
+*/
+
+/*------------------------------------*\
+	EMBEDDED CONTENT
+\*------------------------------------*/
+
+/*
+	TODO Style Audio Content?
+*/
+
+/* Images*/
+img {}
+a img {}
+
+/* Figures */
+figure {}
+figure img {}
+figcaption {}
+
+/*
+	TODO Style SVG Content?
+*/
+
+/*
+	TODO Style Video Content?
+*/
+
+/*------------------------------------*\
+	TABLES
+\*------------------------------------*/
+
+table {}
+caption {}
+tr {}
+td {}
+
+/* Head */
+thead {}
+thead tr {}
+th {}
+
+/* Body */
+tbody {}
+tbody tr {}
+tfoot td {}
+
+/* Foot */
+tfoot {}
+tfoot tr {}
+tfoot td {}
+
+/*
+	TODO Add colspan styles
+*/
+
+
+/*------------------------------------*\
+	FORMS
+\*------------------------------------*/
+
+form {}
+fieldset {}
+legend {}
+label {}
+
+/* Inputs */
+input {}
+textarea {}
+
+input[type=text] {}
+input[type=email] {}
+input[type=search] {}
+input[type=tel] {}
+input[type=url] {}
+input[type=password] {}
+input[type=file] {}
+
+input[type=radio] {}
+input[type=checkbox] {}
+
+/* Select Box */
+select {}
+option {}
+optgroup {}
+
+/* More Inputs */
+input[type=color] {}
+input[type=number] {}
+input[type=range] {}
+input[type=date] {}
+input[type=month] {}
+input[type=week] {}
+input[type=datetime] {}
+input[type=datetime-local] {}
+
+/* Clickable Inputs and Buttons */
+input[type=image] {}
+input[type=reset] {}
+input[type=button] {}
+input[type=submit] {}
+
+button {}
+button[type=reset] {}
+button[type=button] {}
+button[type=submit] {}
+
