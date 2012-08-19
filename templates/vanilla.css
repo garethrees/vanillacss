@@ -1,54 +1,75 @@
-/**
-* Vanilla CSS
-**/
+/*----------------------------------------------------------------------------
+ * Vanilla CSS
+ * http://github.com/garethrees/vanillacss
+ *
+ * Use this stylesheet with the companion html template to provide a starting
+ * point for any website or web application:
+ * http://github.com/garethrees/vanillacss/blob/master/templates/vanilla.html
+ *
+ * Contributions: Add your sytlesheet to /stylesheets/your-style-name.css and 
+ * submit a pull request on GitHub.
+ *---------------------------------------------------------------------------*/
 
-/*------------------------------------*\
-	MAIN ELEMENTS
-\*------------------------------------*/
+/*----------------------------------------------------------------------------
+ * Main Body
+ *---------------------------------------------------------------------------*/
 
+html {}
 body {}
 div {}
 hr {}
+br {}
 
-/* New HTML5 Elements */
+/*----------------------------------------------------------------------------
+ * Main Block Elements
+ *---------------------------------------------------------------------------*/
 
 header {}
 section {}
+aside {}
 footer {}
 
 /*
-	Use ARIA roles to define your page header so that you can use general <header> tags elsewhere
+	Use ARIA roles to define your page header so that you can use general
+	<header> tags elsewhere.
 	Also lets you style your header nav independently of other navs
 	http://adactio.com/journal/4267/
 */
 
+/* Navigation in banner */
+
 header[role="banner"] {}
-header[role="banner"] nav {}
-header[role="banner"] nav ul {}
-header[role="banner"] nav li {}
+header[role="banner"] nav[role="navigation"] {}
+header[role="banner"] nav[role="navigation"] ul {}
+header[role="banner"] nav[role="navigation"] li {}
 
+/* Main Content */
 
-/*------------------------------------*\
-	ARTICLE
-\*------------------------------------*/
+div[role=main]
+
+/*----------------------------------------------------------------------------
+ * Typical Article Layout
+ *---------------------------------------------------------------------------*/
 
 article {}
 article header {}
+article aside {}
 article footer {}
 
-aside {}
-
-/*------------------------------------*\
-	HEADINGS
-\*------------------------------------*/
+/*----------------------------------------------------------------------------
+ * Headings
+ *---------------------------------------------------------------------------*/
 
 /* All Headings */
+
 h1, h2, h3, h4, h5, h6 {}
 
 /* Linked Headings*/
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {}
 
 /* Individual Headings */
+
 h1 {}
 h2 {}
 h3 {}
@@ -56,17 +77,19 @@ h4 {}
 h5 {}
 h6 {}
 
-/*------------------------------------*\
-	TEXT
-\*------------------------------------*/
+/*----------------------------------------------------------------------------
+ * Text
+ *---------------------------------------------------------------------------*/
 
 /* Paragraphs */
+
 p {}
 p+p {}
 
 address {}
 
-/* Text Level Semantics */
+/* Inline Elements */
+
 a {}
 abbr {}
 b {}
@@ -92,69 +115,80 @@ var {}
 u {}
 
 /* Blockquote */
+
 blockquote {}
 blockquote p {}
 blockquote cite {}
 
 /* Preformatted Text */
+
 pre {}
+pre code {}
 
 
-/*------------------------------------*\
-	LISTS
-\*------------------------------------*/
+/*----------------------------------------------------------------------------
+ * Lists
+ *---------------------------------------------------------------------------*/
 
 /* All Lists */
+
 dl, ol, ul {}
+li {}
 
 /* Ordered Lists */
+
 ol {}
 ol li {}
 
 /* Unordered Lists */
+
 ul {}
 ul li {}
 
 /* Definition Lists */
+
 dl {}
 dt {}
 dd {}
 
+/* Stuff in Lists */
 
-/* Lists in Lists */
+li p {}
+li ol {}
+li ul {}
 
-/*
-	TODO Style Lists in Lists
-*/
+/*----------------------------------------------------------------------------
+ * Embedded Content
+ *---------------------------------------------------------------------------*/
 
-/*------------------------------------*\
-	EMBEDDED CONTENT
-\*------------------------------------*/
+/* Audio */
 
-/*
-	TODO Style Audio Content?
-*/
+audio {}
 
 /* Images*/
+
 img {}
 a img {}
 
 /* Figures */
+
 figure {}
 figure img {}
 figcaption {}
 
-/*
-	TODO Style SVG Content?
-*/
+/* Video */
 
-/*
-	TODO Style Video Content?
-*/
+video {}
 
-/*------------------------------------*\
-	TABLES
-\*------------------------------------*/
+/* Other Embeded Content */
+
+canvas {}
+iframe {}
+object {}
+
+/*----------------------------------------------------------------------------
+ * Tables
+ *---------------------------------------------------------------------------*/
 
 table {}
 caption {}
@@ -162,28 +196,32 @@ tr {}
 td {}
 
 /* Head */
+
 thead {}
 thead tr {}
 th {}
 
 /* Body */
+
 tbody {}
 tbody tr {}
 tfoot td {}
 
 /* Foot */
+
 tfoot {}
 tfoot tr {}
 tfoot td {}
 
 /*
-	TODO Add colspan styles
+ colgroup {}
+ col {}
 */
 
 
-/*------------------------------------*\
-	FORMS
-\*------------------------------------*/
+/*----------------------------------------------------------------------------
+ * Forms
+ *---------------------------------------------------------------------------*/
 
 form {}
 fieldset {}
@@ -191,43 +229,58 @@ legend {}
 label {}
 
 /* Inputs */
+
 input {}
 textarea {}
 
-input[type=text] {}
+/* Text Input */
+
 input[type=email] {}
+input[type=password] {}
 input[type=search] {}
 input[type=tel] {}
+input[type=text] {}
 input[type=url] {}
-input[type=password] {}
-input[type=file] {}
+
+/* Single Option */
 
 input[type=radio] {}
 input[type=checkbox] {}
 
-/* Select Box */
+/* More Inputs */
+
+input[type=color] {}
+input[type=date] {}
+input[type=datetime] {}
+input[type=datetime-local] {}
+input[type=file] {}
+input[type=month] {}
+input[type=number] {}
+input[type=range] {}
+input[type=time] {}
+input[type=week] {}
+
+/* Select */
+
 select {}
 option {}
 optgroup {}
 
-/* More Inputs */
-input[type=color] {}
-input[type=number] {}
-input[type=range] {}
-input[type=date] {}
-input[type=month] {}
-input[type=week] {}
-input[type=datetime] {}
-input[type=datetime-local] {}
+/* Misc */
+
+datalist {}
+keygen {}
 
 /* Clickable Inputs and Buttons */
+
 input[type=image] {}
 input[type=reset] {}
 input[type=button] {}
 input[type=submit] {}
 
+/* Buttons */
+
 button {}
 button[type=reset] {}
 button[type=button] {}
 button[type=submit] {}
-
