@@ -29,6 +29,10 @@ section {}
 aside {}
 footer {}
 
+/*----------------------------------------------------------------------------
+ * Typical Banner
+ *---------------------------------------------------------------------------*/
+
 /*
 	Use ARIA roles to define your page header so that you can use general
 	<header> tags elsewhere.
@@ -39,13 +43,18 @@ footer {}
 /* Navigation in banner */
 
 header[role="banner"] {}
+
+header[role="banner"] hgroup h1 {}
+header[role="banner"] hgroup h2 {}
+
 header[role="banner"] nav[role="navigation"] {}
 header[role="banner"] nav[role="navigation"] ul {}
 header[role="banner"] nav[role="navigation"] li {}
+header[role="banner"] nav[role="navigation"] a {}
 
 /* Main Content */
 
-div[role=main]
+div[role=main] {}
 
 /*----------------------------------------------------------------------------
  * Typical Article Layout
@@ -53,6 +62,9 @@ div[role=main]
 
 article {}
 article header {}
+article header hgroup {}
+article header time {}
+article section {}
 article aside {}
 article footer {}
 
@@ -77,6 +89,24 @@ h4 {}
 h5 {}
 h6 {}
 
+/* Section Headings */
+
+section h1 {}
+section h2 {}
+section h3 {}
+section h4 {}
+section h5 {}
+section h6 {}
+
+/* Article Headings */
+
+article h1 {}
+article h2 {}
+article h3 {}
+article h4 {}
+article h5 {}
+article h6 {}
+
 /*----------------------------------------------------------------------------
  * Text
  *---------------------------------------------------------------------------*/
@@ -99,6 +129,7 @@ del {}
 dfn {}
 em {}
 i {}
+img {}
 ins {}
 kbd {}
 mark {}
@@ -205,7 +236,7 @@ th {}
 
 tbody {}
 tbody tr {}
-tfoot td {}
+tbody td {}
 
 /* Foot */
 
@@ -217,7 +248,6 @@ tfoot td {}
  colgroup {}
  col {}
 */
-
 
 /*----------------------------------------------------------------------------
  * Forms
